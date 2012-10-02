@@ -4,9 +4,9 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.8'
-gem 'thin'
 
 group :development do
+  gem 'thin'
 end
 
 group :development, :test do
