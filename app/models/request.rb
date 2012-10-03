@@ -4,8 +4,10 @@ class Request
   extend ActiveModel::Naming
   include ActiveModel::MassAssignmentSecurity
 
-  attr_accessor :string_params, :url
-  attr_accessible :string_params, :url
+  include EnumerateIt
+
+  attr_accessor :string_params, :url, :http_verb
+  attr_accessible :string_params, :url, :http_verb
 
   validates :url, presence: true
 

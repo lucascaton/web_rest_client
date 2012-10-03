@@ -10,7 +10,7 @@ class RequestsController < ApplicationController
     if @request.valid?
       string_params = JSON.load(@request.string_params) || {}
       options = { query: string_params, options: { headers => { 'ContentType' => 'application/json' } } }
-      httparty_result = HTTParty.post @request.url, options
+      httparty_result = HTTParty.send(@request.http_verb.to_sym, @request.url, options)
       @result = CodeRay.scan(httparty_result, :javascript).span
       flash.now[:notice] = 'Retorno OK.'
     else

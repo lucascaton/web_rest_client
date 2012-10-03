@@ -6,6 +6,7 @@ gem 'pg'
 gem 'rails', '3.2.8'
 gem 'coderay'
 gem 'httparty'
+gem 'enumerate_it'
 
 group :development do
   gem 'thin'
