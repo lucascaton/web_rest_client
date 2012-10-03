@@ -11,10 +11,17 @@
 
   %body
   .container
-    -flash.each do |type, message|
-      %div{class: "flash flash-#{ type == :error ? 'error' : 'notice' }"}
-        .message
-          %p=message
-    =yield
+    .row
+      .span12
+        -flash.each do |type, message|
+          %div{class: "alert alert-#{ type == :error ? 'error' : 'success' }"}
+            %button.close{'data-dismiss' => 'alert', :type => 'button'} ×
+            =message
+    .row
+      .span12
+        .well
+          =link_to root_path do
+            %h2 Web Rest Client
+        =yield
 
   =javascript_include_tag 'application'

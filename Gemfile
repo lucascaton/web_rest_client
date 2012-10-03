@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'haml'
+gem 'haml-rails'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.8'
 gem 'coderay'
 gem 'httparty'
 gem 'enumerate_it'
+gem 'twitter-bootstrap-rails'
 
 group :development do
   gem 'thin'

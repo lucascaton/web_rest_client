@@ -12,9 +12,9 @@ class RequestsController < ApplicationController
       options = { query: string_params, options: { headers => { 'ContentType' => 'application/json' } } }
       httparty_result = HTTParty.send(@request.http_verb.to_sym, @request.url, options)
       @result = CodeRay.scan(httparty_result, :javascript).span
-      flash.now[:notice] = 'Retorno OK.'
+      flash.now[:notice] = 'Retorno OK!'
     else
-      flash.now[:error] = 'Você precisa informar uma URL...'
+      flash.now[:error] = 'Você precisa informar uma URL'
       render :new
     end
   end

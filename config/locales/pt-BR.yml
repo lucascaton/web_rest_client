@@ -27,8 +27,10 @@ pt-BR:
 
   activerecord:
     models:
-      # user: Usuários
+      request: Requisições
 
     attributes:
-      # user:
-      #   name: 'Nome'
+      request:
+        string_params: 'Parametros'
+        URL: 'URL'
+        http_verb: 'Verbo HTTP'

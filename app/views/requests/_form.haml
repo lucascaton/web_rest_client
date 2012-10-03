@@ -1,15 +1,16 @@
-=form_for @request do |f|
-  =f.label 'URL:'
-  %br
-  =f.text_field :url, size: 60
-  %br
-  =f.label 'Método HTTP:'
-  %br
-  =f.select :http_verb, HTTPVerbs.to_a, selected: @request.http_verb || HTTPVerbs::GET
-  %br
-  =f.label 'Parametros:'
-  %br
-  =f.text_area :string_params, cols: 60
-  %br
-  %br
-  =f.submit 'Enviar'
+=form_for @request, html: { class: 'form-horizontal' } do |f|
+  .control-group
+    =f.label :url, class: 'control-label'
+    .controls
+      =f.text_field :url, class: 'text_field input-xxlarge', placeholder: 'http://'
+  .control-group
+    =f.label :http_verb, class: 'control-label'
+    .controls
+      =f.select :http_verb, HTTPVerbs.to_a, selected: @request.http_verb || HTTPVerbs::GET
+  .control-group
+    =f.label :string_params, class: 'control-label'
+    .controls
+      =f.text_area :string_params, rows: 16, class: 'input-xxlarge', placeholder: "{ 'a': 1, 'b': 2 }"
+
+  .form-actions
+    =f.submit 'Enviar', class: 'btn btn-primary'
