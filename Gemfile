@@ -4,6 +4,8 @@ gem 'haml'
 gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.8'
+gem 'coderay'
+gem 'httparty'
 
 group :development do
   gem 'thin'

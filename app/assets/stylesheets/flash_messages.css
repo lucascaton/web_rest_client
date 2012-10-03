@@ -1,0 +1,25 @@
+.flash .message {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0 auto 15px;
+  color: white;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+.flash-error .message p, .flash-notice .message p{
+  margin: 8px;
+}
+.flash-error {
+  border: 1px solid #993624;
+  background: #CC4831;
+}
+.flash-notice {
+  color: #28485e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  border: 1px solid #8A9DAA;
+  background: #66CDAA;
+}
+.flash-error, .flash-notice {
+  text-align: left;
+}

@@ -1,0 +1,34 @@
+pt-BR:
+  errors:
+    messages:
+      not_saved: 'não pôde ser salvo'
+      accepted: 'precisa ser aceito'
+      blank: 'não pode ficar em branco'
+      confirmation: 'não bate com a confirmação'
+      empty: 'não pode ser vazio'
+      equal_to: 'precisa ser igual a %{count}'
+      even: 'precisa ser par'
+      exclusion: 'não está disponível'
+      greater_than: 'precisa ser maior do que %{count}'
+      greater_than_or_equal_to: 'precisa ser maior ou igual a %{count}'
+      inclusion: 'não está incluso na lista'
+      invalid: 'não é válido'
+      less_than: 'precisa ser menor do que %{count}'
+      less_than_or_equal_to: 'precisa ser menor ou igual a %{count}'
+      not_a_number: 'não é um número'
+      not_an_integer: 'deve ser um número inteiro'
+      odd: 'precisa ser ímpar'
+      record_invalid: "A validação falhou: %{errors}"
+      taken: 'não está disponível'
+      too_long: 'é muito longo (não mais do que %{count} caracteres)'
+      too_short: 'é muito curto (não menos do que %{count} caracteres)'
+      wrong_length: 'não é do tamanho correto (precisa ter %{count} caracteres)'
+      bill_on_invalid_with_this_time_frame: 'não é compatível com período atual'
+
+  activerecord:
+    models:
+      # user: Usuários
+
+    attributes:
+      # user:
+      #   name: 'Nome'
