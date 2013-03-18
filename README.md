@@ -1,5 +1,7 @@
 # Web Rest Client
 
+Unfinished project.
+
 ## How to setup
 
 1. Copy the project and install its dependencies:
