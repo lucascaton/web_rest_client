@@ -1,0 +1,18 @@
+.page-header
+  %h1 Requisições salvas
+%table.table.table-striped
+  %thead
+    %tr
+      %th ID
+      %th Parametros
+      %th URL
+      %th Verbo HTTP
+      %th Criado em
+  %tbody
+    -@requests.each do |request|
+      %tr
+        %td=link_to request.id, request_path(request)
+        %td=request.string_params
+        %td=request.url
+        %td=request.http_verb
+        %td=l request.created_at
